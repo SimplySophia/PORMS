@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="style.css">
     <title>Course Registration Form</title>
 </head>
 <body>
     <section>
-        <div class="container">
+        <div class="form-box">
             <div class="form-value">
                 <form class="input">
                     <div class="logo"><img src="" alt=""></div>
@@ -16,12 +20,21 @@
                     <p>Fill out the form carefully for registration</p> 
                     
                     <h3>Student Name</h3>
-                <input type="text" name="name" placeholder="Last Name">
-                <input type="text" name="name" placeholder="First Name"><br>
-                <input type="text" name="name" placeholder="Middle Name">
+                    <div class="inputbox">
+                        <input type="text" required>
+                        <label for="">Last Name</label>
+                    </div>
+                    <div class="inputbox2">
+                        <input type="text" required>
+                        <label for="">First Name</label>
+                    </div>
+                    <div class="inputbox3">
+                        <input type="text" required>
+                        <label for="">Middle Name</label>
+                    </div>
                 <h3>Gender</h3>
                 <input type="text" name="name" placeholder="Please Select">
-                <input type="hidden" name="Please Select">
+                <input type="hidden" name="Please Select"<i class="caret">
                 <h3>Student Email</h3>
                 <input type="email" name="Email" placeholder="ex: myname@example.com">
                 <h3>Student ID</h3>
@@ -30,7 +43,6 @@
                 <input type="text" name="name" placeholder="Please Select"><br>
                 <input type="submit" value="submit">
                 </form>
-                <h3>Student Name</h3>
            </div>
        </div>
     </section>
