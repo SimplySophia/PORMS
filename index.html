@@ -3,9 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
-     crossorigin="anonymous" referrerpolicy="no-referrer" />
      <link rel="stylesheet" href="style.css">
     <title>Course Registration Form</title>
 </head>
@@ -14,8 +11,7 @@
         <div class="form-box">
             <div class="form-value">
                 <form class="input">
-                    <div class="logo"><img src="" alt=""></div>
-                    <h1>KENULE BEESON SARO WIWA POLYTECNIC</h1>
+                    <img data-placeholder="no" src="C:\Users\sophi\Downloads\s5_logo.png" alt="Ken Poly" style="width:246px;height:78px;">
                     <h2>Course Registration</h2>
                     <p>Fill out the form carefully for registration</p> 
                     
@@ -33,14 +29,33 @@
                         <label for="">Middle Name</label>
                     </div>
                 <h3>Gender</h3>
-                <input type="text" name="name" placeholder="Please Select">
-                <input type="hidden" name="Please Select"<i class="caret">
+                <label for="options">Select an option:</label>
+                    <select id="options" name="">
+                        <option value="opt1">MALE</option>
+                        <option value="opt2">FEMALE</option>
+                    <label for="options">Select an option:</label>
+                    </select>
+                
                 <h3>Student Email</h3>
                 <input type="email" name="Email" placeholder="ex: myname@example.com">
-                <h3>Student ID</h3>
+
+                <h3>MatNo</h3>
                 <input type="text" name="" id="">
+
                 <h3>List of Courses</h3>
-                <input type="text" name="name" placeholder="Please Select"><br>
+                <label for="options">Select an option:</label>
+                <select id="options" name="">
+                    <option value="opt1">OPERATING SYSTEMS 1</option>
+                    <option value="opt2">DATABASE DESIGN 1</option>
+                    <option value="opt3">COMPUTER PROGRAMMING (C++)</option>
+                    <option value="opt4">COMPUTER ARCHITECTURE</option>
+                    <option value="opt5">PYTHON PROGRAMMING LANGUAGE</option>
+                    <option value="opt6">NUMERICAL METHODS</option>
+                    <option value="opt7">OPERATION RESEARCH 1</option>
+                    <option value="opt8">STATISTICAL THEORY</option>
+                    <option value="opt9">ADVANCED ALGEBRA</option>
+                    <option value="opt3">USE OF ENGLISH 111</option>
+                </select><br>
                 <input type="submit" value="submit">
                 </form>
            </div>
