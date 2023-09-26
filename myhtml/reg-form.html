@@ -1,109 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="reg.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="reg.css" />
     <title>Course Registration Form</title>
-</head>
-<body>
+  </head>
+  <body>
     <section>
-        <div class="form-box">
-            <div class="form-value">
-                <form autocomplete="on">
-                    <div class="hero">
-                        <img src="./ken.jpg" alt="kenpoly">
-                        <h1>Course Registration</h1><br>
-                        <h2>Fill out the form carefully for registration</h2>
-                    </div>
+      <div class="form-box">
+        <div class="form-value">
+          <form autocomplete="on">
+            <div class="hero">
+              <img src="./kenn.jpeg" alt="kenpoly" />
+              <h1>Course Registration</h1>
+              <br />
+              <h2>Fill out the form carefully for registration</h2>
+            </div>
 
-                    <div class="details">
+            <fieldset>
+              <legend>
+                <label for="student-info">Student Information</label>
+              </legend>
+              <div class="details">
                           <div class="form-group">
                              <legend>First Name<legend>
-                             <input type="text" id="firstname" name="firstname" required>
+                             <input type="text" id="fname" name="firstname" disabled>
                           </div>
                           <div class="form-group">
                              <legend>Middle Name<legend>
-                             <input type="text" id="middlename" name="middlename">
+                             <input type="text" id="mname" name="middlename" disabled>
                           </div>
                           <div class="form-group">
                              <legend>Last Name<legend>
-                            <input type="text" id="lastname" name="lastname" required>
+                            <input type="text" id="lname" name="lastname" disabled>
                           </div>
                           <div class="form-group">
                             <legend>Email</legend>
-                            <input type="email" id="email"  name="email" placeholder="ex: myname@example.com" required>
+                            <input type="email" id="email"  name="email" placeholder="ex: myname@example.com" disabled>
                           </div>
                           <div class="form-group">
                             <legend>MatNo</legend>
-                            <input type="number" id="student-id" name="student-id" required>
+                            <input type="text" id="matno" name="student-id" disabled>
                           </div>
 
                           <div class="form-group">
                             <legend>Choose level</legend>
-                            <select id="options" name="level">
+                            <select id="level" name="level">
                                 <optgroup label="Level">
-                                    <option value=1>ND1</option>
-                                    <option value=2>ND2</option>
+                                    <option value=1 disabled>ND1</option>
+                                    <option value=2 disabled>ND2</option>
                                     <option value=3>HND1</option>
-                                    <option value=4>HND2</option>
+                                    <option value=4 disabled>HND2</option>
                                 </optgroup>
                             </select>
                           </div>    
                         <div>
                             <legend> Select semester:</legend>
-                             <select id="options" name="semester">
+                             <select id="semester" name="semester">
                                 <optgroup label="Semester">
                                     <option value=1>First Semester</option>
                                     <option value=2>Second Semester</option>
                                 </optgroup>
                             </select>
                         </div>
-                    </div>
-
-                  
-
-                    <fieldset>
-                        <legend><label for="toggle">Available Courses</label></legend>
-        
-                        <div id="course-container">
-                            <ul id="course-list">
-                                <li><input type="checkbox" name="courses" value="COM311">OPERATING SYSTEMS 1</li>
-                                <li><input type="checkbox" name="courses" value="COM312"> DATABASE DESIGN 1</li>
-                                <li><input type="checkbox" name="courses" value="COM313"> COMPUTER PROGRAMMING (C++)</li>
-                                <li><input type="checkbox" name="courses" value="COM314"> COMPUTER ARCHITECTURE</li>
-                                <li><input type="checkbox" name="courses" value="COM315">PYTHON PROGRAMMING LANGUAGE</li>
-                                <li><input type="checkbox" name="courses" value="COM316">NUMERICAL METHODS</li>
-                                <li><input type="checkbox" name="courses" value="STA314">OPERATION RESEARCH 1</li>
-                                <li><input type="checkbox" name="courses" value="STA311">STATISTICAL THEORY</li>
-                                <li><input type="checkbox" name="courses" value="MTH311">ADVANCED ALGEBRA</li>
-                                <li><input type="checkbox" name="courses" value="GNS111">USE OF ENGLISH 1</li>
-                            </ul>
-                        </div>
-                    </fieldset>
-
-                    <!-- <fieldset>
-                        <legend><label for="toggle">click me</label></legend>
-                        
-                        <ul>
-                            <li><input type="checkbox" name="course" value="os">OPERATING SYSTEMS 11</li>
-                            <li><input type="checkbox" name="course" value="db-design">DATABASE DESIGN 11</li>
-                            <li><input type="checkbox" name="course" value="assembly-lang">ASSEMBLY LANGUAGE</li>
-                            <li><input type="checkbox" name="course" value="software-eng">INTRO. TO SOFTWARE ENGINEERING</li>
-                            <li><input type="checkbox" name="course" value="intro-hcl">INTRO. TO HUMAN COMP. INTERFACE(HCI)</li>
-                            <li><input type="checkbox" name="course" value="mobile-app">MOBILE APPLICATION DEVELOPMENT</li>
-                            <li><input type="checkbox" name="course" value="intro-ai">INTRO. TO ARTIFICIAL INTELLIGENT</li>
-                            <li><input type="checkbox" name="course" value="comm-eng">COMMUNICATION IN ENGLISH 111</li>
-                            <li><input type="checkbox" name="course" value="adv-cal">ADVANCED CALCULUS</li>
-                        </ul>
-                    </fieldset>
                     
-                    <br> -->
-                    <button type="submit">submit</button>
-                </form>
-                
-           </div>
-       </div>
+                    </div>
+                    
+            </fieldset>
+            
+            <fieldset >
+              <legend><label for="toggle">Available Courses</label></legend>
+
+              <div id="course-container">
+                <ul id="course-list"></ul>
+              </div>
+            </fieldset>
+            <button type="button" id="form-submit">Register</button>
+          </form>
+        </div>
+      </div>
     </section>
-</body>
+    <script src="../js/course-reg.js"></script>
+  </body>
 </html>

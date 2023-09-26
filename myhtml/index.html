@@ -17,7 +17,7 @@
   <body>
     <div class="navbar">
       <a href="logo">
-        <img src=".\kenn.jpg" alt="kenpoly" />
+        <img src="./kenn.jpeg" alt="kenpoly" />
       </a>
       <div class="nav_links">
         <ul>
@@ -28,10 +28,6 @@
         </ul>
       </div>
       <a href="./login.html" class="action_btn">Get started</a>
-
-      <div class="toggle">
-        <i class="fa-solid fa-bars"></i>
-      </div>
     </div>
     <main>
       <section id="text">
@@ -46,20 +42,5 @@
       <li><a href="#">Contact Us</a></li>
       <li><a href="#" class="action_btn">Get started</a></li>
     </div>
-
-    <script>
-      const toggleBtn = document.querySelector('.toggle')
-      const toggleBtnIcon = document.querySelector('.toggle i')
-      const dropDowmMenu = document.querySelector('.dropdown_menu')
-
-      toggleBtn.onclick = function () {
-        dropDowmMenu.classList.toggle('open')
-        const isOpen = dropDowmMenu.classList.contains('open')
-
-        toggleBtnIcon.classList = isOpen
-          ? 'fa-solid fa-x mark'
-          : 'fa-solid fa-bars'
-      }
-    </script>
   </body>
 </html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registered Courses</title>
+  </head>
+  <body>
+    <h1>List of Registered Courses</h1>
+    <ul id="courseList">
+      <!-- Registered courses will be displayed here -->
+    </ul>
+    <script>
+      // Retrieve registered courses from local storage
+      const user = JSON.parse(localStorage.getItem('user'))
+      const registeredCourses = user.registeredCourse.courses
+
+      // Get a reference to the <ul> element
+      const courseList = document.getElementById('courseList')
+      if (registeredCourses && registeredCourses.length > 0) {
+        // Loop through the registered courses and create <li> elements for each
+        registeredCourses.forEach((course) => {
+          const listItem = document.createElement('li')
+          listItem.textContent = course
+          courseList.appendChild(listItem)
+        })
+      } else {
+        // If no registered courses, display a message
+        const noCoursesMessage = document.createElement('p')
+        noCoursesMessage.textContent = 'No courses registered.'
+        courseList.appendChild(noCoursesMessage)
+      }
+    </script>
+  </body>
+</html>
