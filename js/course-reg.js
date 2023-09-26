@@ -131,7 +131,7 @@ btn.addEventListener('click', (e) => {
   localStorage.setItem('user', JSON.stringify(user))
   alert('Successfully registered selected courses')
 
-  const regCoursePage = `${window.location.origin}/myhtml/courses.html?refId=${user.id}`
+  const regCoursePage = `${window.location.origin}/courses.html?refId=${user.id}`
 
   return window.location.replace(regCoursePage)
 })

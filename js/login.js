@@ -24,7 +24,7 @@ loginBtn.addEventListener('click', async (e) => {
   const validUser = users.find((obj) => obj.email === email)
   if (!validUser || validUser.password !== password)
     return alert('Invalid Credentials')
-  const regFormUrl = `${window.location.origin}/myhtml/reg-form.html?fname=${validUser.firstname}&lname=${validUser.lastname}&mname=${validUser.middlename}&matno=${validUser.matno}&email=${validUser.email}`
+  const regFormUrl = `${window.location.origin}/reg-form.html?fname=${validUser.firstname}&lname=${validUser.lastname}&mname=${validUser.middlename}&matno=${validUser.matno}&email=${validUser.email}`
 
   return window.location.replace(regFormUrl)
 })
